@@ -1,0 +1,444 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    color: #222;
+}
+
+
+
+
+
+
+.navbar {
+    width: 100%;
+    height: 65px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+.logo2 {
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+}
+
+.navbar-containes {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #123B59;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #00A6D6;
+}
+
+.btn {
+    display: flex;
+    gap: 8px;
+}
+
+.btn button {
+    padding: 9px 13px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.sub {
+    background: rgb(155, 222, 245);
+    color: white;
+    border: none;
+}
+
+.CON {
+    background: #222;
+    color: white;
+    border: none;
+}
+
+/* HERO */
+.contenue {
+    width: 100%;
+    height: 400px;
+}
+
+.first-part {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+
+
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.first-part::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        110deg,
+        rgba(155, 189, 233, 0.85),
+        rgba(76, 96, 120, 0.85),
+        rgba(5, 140, 181, 0.9)
+    );
+    z-index: 1;
+}
+
+.main-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.main-text h1 {
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.main-text p {
+    font-size: 11px;
+}
+
+
+
+
+
+.search-box {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 325px;
+    height: 28px;
+    background: white;
+    padding: 2px;
+}
+
+.sports, .city {
+    width: 33.33%;
+    height: 100%;
+}
+
+.sports select, .city select {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    background: white;
+    text-align: center;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.search-btn {
+    width: 33.33%;
+    height: 100%;
+    border: none;
+    background: #777;
+    color: white;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+
+
+
+.propos {
+    width: 100%;
+    padding: 15px 8%;
+    background: white;
+}
+
+.propos article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.propos article div {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.propos img {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 50%;
+  
+    grid-row: 1 / 3;
+    object-fit: contain;
+}
+
+.propos h3 {
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.propos p {
+    font-size: 8px;
+    line-height: 1.4;
+    color: #777;
+}
+
+
+
+
+.conseil {
+    width: 100%;
+    padding: 20px 8% 18px;
+    background: #f5f6f7;
+    text-align: center;
+}
+
+.titre p {
+    margin-bottom: 15px;
+}
+
+.articles-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.article {
+    position: relative;
+    width: 33.33%;
+    height: 95px;
+    overflow: hidden;
+}
+
+.article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+}
+
+.texte {
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+    right: 7px;
+    text-align: left;
+    color: white;
+    z-index: 2;
+}
+
+.texte h2 {
+    font-size: 10px;
+    line-height: 1.2;
+    margin-bottom: 3px;
+}
+
+.texte p {
+    font-size: 8px;
+    color: white;
+}
+
+.consulter {
+    margin-top: 15px;
+    padding: 8px 12px;
+    background: #222;
+    color: white;
+    border: none;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+
+
+.disciplines {
+    width: 100%;
+    padding: 20px 8%;
+    background: white;
+    text-align: center;
+}
+
+.titre2 p {
+    margin-bottom: 15px;
+}
+
+.sport {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.sport-card {
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sport-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.sport-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+}
+
+.sport-text {
+    position: absolute;
+    bottom: 6px;
+    left: 7px;
+    z-index: 2;
+    color: white;
+    text-align: left;
+}
+
+.sport-text h3 {
+    font-size: 10px;
+}
+
+.sport-text p {
+    font-size: 8px;
+}
+
+.sport-card:hover img {
+    transform: scale(1.08);
+}
+
+.voir-sports {
+    margin-top: 15px;
+    padding: 9px 12px;
+    background: #222;
+    color: white;
+    border: none;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+
+
+
+
+.footer {
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 30px 8% 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.footer-logo h2 span {
+    color: #ffb21b;
+}
+
+.footer-logo p {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffb21b;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    font-size: 11px;
+    color: #aaa;
+}
+
